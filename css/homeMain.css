@@ -1,0 +1,27 @@
+main{
+    padding-top: 20px;
+    margin-bottom: 100px;
+    
+}
+
+#sec1 img {
+    float:left;
+}
+#sec1 p{
+    padding-top: 90px;
+    padding-left: 300px;
+    
+}
+#sec2{
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+#sec2 img {
+    float:right;
+}
+#sec2 p{
+    padding-left:300px ;
+    padding-top: 90px;
+    
+}
