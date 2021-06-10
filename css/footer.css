@@ -1,0 +1,20 @@
+footer{
+    background-color: gray;
+    height: auto;
+    padding: 20px;
+}
+#sub{
+    float: left;
+    padding-right: 25%;
+}
+#logos a{
+    padding-left: 20px;
+}
+
+#logo{
+    text-align: center;
+}
+
+#logoFoot #logo{
+    padding-bottom: 40px;
+}
