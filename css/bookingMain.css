@@ -1,0 +1,52 @@
+form{
+    width: 50%;
+    margin: 0 auto ;
+    padding-top:120px ;
+    padding-bottom:120px ;
+
+
+
+}
+#cap{
+    text-align: center;
+}
+fieldset{
+    border: black solid 3px;
+}
+
+div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 50%;
+    display: inline-block;
+    float: left;
+
+  }
+  
+  label {
+    display: block;
+    padding-bottom: 10px;
+  }
+  
+  input, select, textarea
+  {
+   
+    width: 90%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input{
+    width: 85%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+ 
+  
+ 
+  
