@@ -1,0 +1,66 @@
+p {
+text-align: justify;
+padding: 20px;
+
+}
+
+#box {
+
+    border: 5px solid black;
+
+} 
+
+img{
+    float:left;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+div{
+    height: 300px;
+    width: 900px;
+    margin-left: 150px ;
+}
+
+
+h2{
+    padding-top: 30px;
+}
+
+
+
+#box2 {
+
+    border: 5px solid black;
+    margin-top: 50px;
+
+} 
+
+
+button{
+    margin-left: 500px;
+    margin-top: 80px;
+}
+
+
+#box3 {
+    width: 50%;
+    margin: 100px;
+    margin-left: 350px;
+}
+
+.l1{
+    margin-left: 100px;
+}
+
+#name3 {
+    width: 262px;
+}
+
+/* #name{
+    width: 150px;
+    height: 150px;
+} */
+
+
+
