@@ -3,23 +3,23 @@ text-align: justify;
 padding: 20px;
 
 }
-
+fieldset{
+    width: 70%;
+}
 #box {
 
     border: 5px solid black;
-
-} 
-
-img{
-    float:left;
-    padding: 20px;
-    border-radius: 100px;
-}
-
-div{
     height: 300px;
     width: 900px;
     margin-left: 150px ;
+    margin-top: 50px;
+
+} 
+
+#imageBlog{
+    float:left;
+    padding: 20px;
+    border-radius: 100px;
 }
 
 
@@ -28,11 +28,19 @@ h2{
 }
 
 
+#submitForm{
+    margin-left: 50%;
+    margin-right: 50%;
 
+
+}
 #box2 {
 
     border: 5px solid black;
     margin-top: 50px;
+    height: 300px;
+    width: 900px;
+    margin-left: 150px ;
 
 } 
 
@@ -50,7 +58,8 @@ button{
 }
 
 .l1{
-    margin-left: 100px;
+    margin-left: 30%;
+
 }
 
 #name3 {
@@ -61,6 +70,8 @@ button{
     width: 150px;
     height: 150px;
 } */
+
+
 
 
 

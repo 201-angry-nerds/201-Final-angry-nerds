@@ -5,7 +5,7 @@ footer{
 }
 #sub{
     float: left;
-    padding-right: 25%;
+    /*padding-right: 25%;*/
 }
 #logos a{
     padding-left: 20px;
@@ -17,4 +17,7 @@ footer{
 
 #logoFoot #logo{
     padding-bottom: 40px;
+}
+#logoFoot #sub{
+    padding-bottom: 20px;
 }
