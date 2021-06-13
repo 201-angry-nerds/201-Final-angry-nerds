@@ -46,34 +46,43 @@
     </p>
     
     </div>
+    
+<div id="box4">
+
+</div>
+
+<button id="navButton">Lorem, ipsum dolor.</button>
 
 
-<button>Lorem, ipsum dolor.</button>
+<div id="myNav" class="overlay">
+    <a class="closebtn pointer" id="aEl">&times;</a>
+    <div class="overlay-content">
+        <form name="blogForm" id="box3">
 
-<form id="box3">
-
-<fieldset>
-<legend>Talk About Your Trip</legend>
-
-<label for="name" class="l1">Lorem, ipsum.</label>
-<input type="text" id="name">
-
-<br>
-<br>
-
-<label for="name2" class="l1">Lorem, ipsum.</label>
-<input type="url" id="name2">
-<br> <br>
-
-<textarea name="" id="name3" cols="30" rows="10" class="l1" placeholder="write message .."></textarea>
-<br>
-<input type="submit" name="" id="submitForm">
-</fieldset>
-
-
-
-</form>
-
+            <fieldset>
+            <legend>Talk About Your Trip</legend>
+            
+            <label  for="name" class="l1">Lorem, ipsum.</label>
+            <input name="name" type="text" id="name" required>
+            
+            <br>
+            <br>
+            
+            <labelfor="name2" class="l1">Lorem, ipsum.</label>
+            <input type="url" id="name2"  name="url" required>
+            <br> <br>
+            
+            <textarea name="blogText" id="name3" cols="30" rows="10" class="l1" placeholder="write message .." required></textarea>
+            <br>
+            <button  type="submit" >click</button>
+            
+            </fieldset>
+            
+            
+            
+            </form>
+    </div>
+  </div>
 </main>
 <footer><div style="float: right;">
     <select name="lang" id="lang">
@@ -108,6 +117,8 @@
         </div>
 
 </div>
+<script src="../js/blog.js"></script>
+
 </footer>
 </body>
 </html>
