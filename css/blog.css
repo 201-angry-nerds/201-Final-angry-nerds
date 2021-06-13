@@ -20,6 +20,8 @@ fieldset{
     float:left;
     padding: 20px;
     border-radius: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -33,6 +35,10 @@ h2{
     margin-right: 50%;
 
 
+}
+
+main{
+    margin-left: 50px;
 }
 #box2 {
 
@@ -65,13 +71,37 @@ button{
 #name3 {
     width: 262px;
 }
-
+#navButton{
+    margin-bottom: 20px;
+}
 /* #name{
     width: 150px;
     height: 150px;
 } */
+.pointer {cursor: pointer;}
 
-
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   /* background-color:aqua;*/
+    background-color: skyblue;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
 
 
 
