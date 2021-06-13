@@ -25,6 +25,7 @@ function getDataHandler(event){
     const urlS=Posts.url.value;
     const textPostS=Posts.blogText.value;
     new BlogPost(nameS,urlS,textPostS);
+    //console.log(event);
     render();
 
 
@@ -45,7 +46,7 @@ function getDataHandler(event){
         let postAreaEl=document.createElement('p');
         postAreaEl.textContent=`${BlogPost.allPosts[i].textPost}`;
         childDiv.appendChild(postAreaEl);
-        console.log(BlogPost.allPosts);
+      //  console.log(BlogPost.allPosts);
      }
   
  }
@@ -59,9 +60,9 @@ function savingToLs(){
   
   function gettingPostsFromLs(){
     let data = localStorage.getItem('posts');
-    console.log(data);
+    //console.log(data);
     let parsedOrder = JSON.parse(data);
-    console.log(parsedOrder);
+   // console.log(parsedOrder);
 
   
     
