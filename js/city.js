@@ -35,7 +35,7 @@ function render(){
     imgtxt = document.createElement('h6');
     let btn = document.createElement('button');
     btn.setAttribute('id',i);
-    btn.textContent = ('favorite <3')
+    btn.textContent = ('favorite <3');
     img8.appendChild(imgplace);
     img8.appendChild(imgtxt);
     img8.appendChild(btn);
@@ -44,8 +44,9 @@ function render(){
     // btn.setAttribute('src', allCities[i].button);
     btn.addEventListener('click' , addfav);
   }
-} 
+}
 render();
+
 
 
 
@@ -69,6 +70,19 @@ function saveToLS(id)
     let setjson = JSON.stringify(id);
     localStorage.setItem('Cities',setjson);
    console.log(setjson);
+function addfav(event){
+  let id = event.target.id;
+  console.log(id);
+  saveArr.push(allCities[id]);
+  saveToLS(saveArr);
+}
+
+//   console.log(allCities);
+function saveToLS(id){
+  let setjson = JSON.stringify(id);
+  localStorage.setItem('Cities',setjson);
+  console.log(setjson);
+
 }
 
 
