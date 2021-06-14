@@ -5,81 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-
-
+    <link rel="stylesheet" href="../css/stars.css">
+    <link rel="stylesheet" href="../css/toggle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <img src="https://via.placeholder.com/80x80/333" alt="">
-
                 <li><a href="">page1</a></li>
                 <li><a href="">page2</a></li>
                 <li><a href="">page3</a></li>
                 <li><a href="">page4</a></li>
             </ul>
+         
         </nav>
+        <label  class="switch">
+            <input id="nightmode"type="checkbox"  >
+            <span class="slider round"></span>
+                </label>
     </header>
-
 <main>
 
+  
 <div id="box">
 <img id="imageBlog" src="https://via.placeholder.com/100x100" alt="pic">
 <h2>Name</h2>
 <p>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ab eum nisi maxime quo expedita! Vero blanditiis quam commodi sequi quod nesciunt culpa pariatur nisi dignissimos vel vitae ipsa deleniti molestiae animi nulla architecto, sapiente repudiandae. Hic odio voluptatem, exercitationem laborum iste possimus laudantium pariatur dolore optio molestias, recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab ea maxime similique, porro cum, omnis corrupti sequi tenetur atque quas ipsa qui rerum? Recusandae excepturi ab rem cupiditate earum corporis labore soluta atque nihil optio minima eum error repellendus necessitatibus dolore quasi eaque delectus voluptatum adipisci, voluptate consectetur vitae!
 </p>
-
 </div>
-
-
 <div id="box2">
-    
     <img id="imageBlog" src="https://via.placeholder.com/100x100" alt="pic">
     <h2>Name</h2>
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ab eum nisi maxime quo expedita! Vero blanditiis quam commodi sequi quod nesciunt culpa pariatur nisi dignissimos vel vitae ipsa deleniti molestiae animi nulla architecto, sapiente repudiandae. Hic odio voluptatem, exercitationem laborum iste possimus laudantium pariatur dolore optio molestias, recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab ea maxime similique, porro cum, omnis corrupti sequi tenetur atque quas ipsa qui rerum? Recusandae excepturi ab rem cupiditate earum corporis labore soluta atque nihil optio minima eum error repellendus necessitatibus dolore quasi eaque delectus voluptatum adipisci, voluptate consectetur vitae!
     </p>
-    
     </div>
-    
 <div id="box4">
 
 </div>
-
 <button id="navButton">Lorem, ipsum dolor.</button>
-
-
 <div id="myNav" class="overlay">
     <a class="closebtn pointer" id="aEl">&times;</a>
     <div class="overlay-content">
         <form name="blogForm" id="box3">
-
-            <fieldset>
-            <legend>Talk About Your Trip</legend>
-            
-            <label  for="name" class="l1">Lorem, ipsum.</label>
-            <input name="name" type="text" id="name" required>
-            
-            <br>
-            <br>
-            
-            <labelfor="name2" class="l1">Lorem, ipsum.</label>
-            <input type="url" id="name2"  name="url" required>
-            <br> <br>
-            
-            <textarea name="blogText" id="name3" cols="30" rows="10" class="l1" placeholder="write message .." required></textarea>
-            <br>
-            <button  type="submit" >click</button>
-            
-            </fieldset>
-            
-            
-            
+            <div class="container">
+                <div class="post" id="post">
+                   <div class="text">
+                      Thanks for rating us!
+                   </div>
+                   <div class="edit" id="edit">
+                      EDIT
+                   </div>
+                </div>
+                <label  for="name" class="l1">Lorem, ipsum.</label>
+                <input name="name" type="text" id="name" required>
+                <br>
+                <br>
+                <labelfor="name2" class="l1">Lorem, ipsum.</label>
+                <input type="url" id="name2"  name="url" required>
+                <br> <br>
+                <textarea name="blogText" id="name3" cols="30" rows="10" class="l1" placeholder="write message .." required></textarea>
+                <br>
+                <center>
+                <div class="star-widget" id="star-widget" >
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                    <section2></section2>
+                </div>
+                </center>
+                <br>
+                <br>
+                <br>
+            <button  type="submit" >click</button>            
             </form>
     </div>
   </div>
@@ -97,7 +107,6 @@
 <a href="">link3</a>
 <br>
 <a href="">link4</a>
-
 <div id="logoFoot">
     <div id="logo">                    <img src="https://via.placeholder.com/80x80/333" alt="">
     </div>
@@ -105,20 +114,17 @@
         <input type="text" name="" id="">
         <input type="submit" >
     </div>
-
         <div id="logos">
-
             <a href="">logo1</a>
             <a href="">logo2</a>
             <a href="">logo3</a>
             <a href="">logo4</a>
             <h4 style="float: right;">all rights reserved &copy; by angry-nerds ltd</h4>
-
         </div>
-
 </div>
-<script src="../js/blog.js"></script>
+<script src="../js/darkMode.js"></script>
 
+<script src="../js/blog.js"></script>
 </footer>
 </body>
 </html>
