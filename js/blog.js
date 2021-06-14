@@ -1,9 +1,21 @@
+'use strict'
+let rate1=document.getElementById('rate-1');
+let rate2=document.getElementById('rate-2');
+let rate3=document.getElementById('rate-3');
+let rate4=document.getElementById('rate-4');
+let rate5=document.getElementById('rate-5');
+
+const widget = document.getElementById("star-widget");
+  const editBtn = document.getElementById("edit");
+  editBtn.addEventListener('click',handleClicking2);
 'use strict';
 
 
 let blogForm=document.getElementById('box3');
 let ParentDivEl=document.getElementById('box4');
-function BlogPost(name,url,textPost)
+let starCount=0;
+let count=0;
+function BlogPost(name,url,textPost,rates)
 {
   this.name=name;
   this.url=url;
@@ -32,13 +44,12 @@ this.textPost=textPost;
 this.rates=rates;
 BlogPost.allPosts.push(this);
 savingToLs();
-
 }
-
 BlogPost.allPosts=[];
 /* new BlogPost('farah','hi',"descripthion");
 console.log(BlogPost.allPosts); */
 function getDataHandler(event){
+
 
   event.preventDefault();
   const Posts=event.target;
@@ -101,6 +112,39 @@ gettingPostsFromLs();
     const nameS=Posts.name.value;
     const urlS=Posts.url.value;
     const textPostS=Posts.blogText.value;
+
+    widget.style.display = "none";
+
+
+    if(rate1.checked === true){
+        console.log('one star selected');
+        starCount=1;
+
+    }
+    else   if(rate2.checked === true){
+        console.log('two stars selected');
+        starCount=2;
+    }
+    else   if(rate3.checked === true){
+        console.log('three stars selected');
+        starCount=3;
+    }
+    else   if(rate4.checked === true){
+        console.log('four stars selected');
+        starCount=4;
+    }
+    else if(rate5.checked === true){
+        console.log('five stars selected');
+        starCount=5;
+    }
+    count=starCount;
+    //console.log(count);
+
+    const starS=count;
+
+    new BlogPost(nameS,urlS,textPostS,starS);
+    render();
+  }
     widget.style.display = "none";
     if(rate1.checked === true){
         console.log('one star selected');
@@ -135,6 +179,7 @@ gettingPostsFromLs();
   }
     //console.log(event);
  function render(){
+
     console.log(BlogPost.allPosts);
      for(var i=0;i<BlogPost.allPosts.length;i++){
         let childDiv=document.createElement('div');
@@ -153,6 +198,9 @@ gettingPostsFromLs();
         let nestedDiv=document.createElement('div');
         childDiv.appendChild(nestedDiv);
       //  console.log(BlogPost.allPosts);
+      //console.log(BlogPost.allPosts[i].rates);
+      for (let x = 0; x <BlogPost.allPosts[i].rates; x++) {
+       
       console.log(BlogPost.allPosts[i].rates);
       for (let x = 0; x <BlogPost.allPosts[i].rates; x++) {
         let label=document.createElement('label');
@@ -169,8 +217,7 @@ gettingPostsFromLs();
         //console.log(label.id);
       // console.log(starCount);
       }
-     }
-     //console.log(starCount);
+
  }
 function savingToLs(){
     let convertedArr = JSON.stringify(BlogPost.allPosts); 
@@ -183,8 +230,8 @@ function savingToLs(){
    // console.log(parsedOrder);
     if(parsedOrder){ 
       BlogPost.allPosts=parsedOrder;
+      render();
       }
-  render();
     }
     gettingPostsFromLs();
 
@@ -208,10 +255,3 @@ function closeNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
-
-
-
-  
-  
- 
-
