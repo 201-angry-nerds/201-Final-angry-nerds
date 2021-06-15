@@ -76,7 +76,7 @@ function addfav(event){
   saveArr.push(allCities[id]);
   saveToLS(saveArr);
 }
-
+}
 //   console.log(allCities);
 function saveToLS(id){
   let setjson = JSON.stringify(id);

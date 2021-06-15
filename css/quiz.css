@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h3 {
+  margin: 10px 0px;
+}
+
+.mainHeader {
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.quizArea {
+
+  width: 60vw;
+  max-width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  margin-left:250px ;
+  margin-top: 100px;
+  justify-content: center; 
+}
+
+#question{
+}
+#header1{
+}
+.buttonArea {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+#timerArea{
+}
+
+button {
+  --hue: var(--hue-neutral);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  text-align: center;
+}
+
+button:hover {
+  border-color: black;
+}
+
+.start {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 0px;
+
+
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.scoresList {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0.3rem 0;
+}
+
+#highScoresList {
+  margin: 1rem 0;
+}
+
+#scoreArea {
+  padding-bottom: 1rem;
+}
+
+#init {
+  margin-top: 0.7rem;
+  margin-left: 50px;
+}
+#initials {
+  margin: 0.3rem;
+margin-left: 250px;
+
+}
+
+#save-btn {
+  margin: 0.7rem;
+
+}
+
+#showScoresButton {
+  margin-top: 0.3rem;
+}
+
+
+
