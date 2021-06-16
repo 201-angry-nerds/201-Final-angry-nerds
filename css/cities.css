@@ -1,3 +1,15 @@
+body {
+    box-sizing: border-box;
+    background-color: #FCF8E8;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
 
 .imageColumn{
     display: inline-block;
@@ -9,3 +21,102 @@
     padding: 100px;
 
 }
+
+h6 {
+    color:black;
+    text-align: center;
+    padding-left: 125px;
+    font-size: larger;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+button {
+    background-color: #df7861;
+    border: none;
+    border-radius: 3em;
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 122px;
+    
+  }
+
+
+#allimgs {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -65px;
+   
+}
+
+#allimgs > div {
+    /* background-color: #f1f1f1; */
+    width: 100px;
+    margin: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+}
+
+
+#allimgs img {
+
+    width: 280px;
+    display: table;
+}
+ p {
+     font-size: 10px;
+ }
+
+ #container{
+    position: relative;
+    width: 100%;
+}
+
+
+#myImg {
+    opacity: 1;
+     display: block; 
+     width: 5px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#middle {
+    line-height: 5px;
+    transition: .8s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+     text-align: center;
+}
+
+#container:hover #myImg {
+  opacity: 0.3;
+}
+
+#container:hover #middle {
+  opacity: 1;
+}
+
+#myParaghraph {
+    line-height: 20px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center; 
+     background-color: #df7861;
+    color: white;
+    font-size: 17px;
+    padding: 95px 95px;
+    block-size: 20px;
+} 
