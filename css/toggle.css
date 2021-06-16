@@ -70,7 +70,7 @@
   .dark-mode {
 
 	background-color: black;
-	color: #EAEBFF;
+	color: #FCF8E8;
  }
  .dark-mode #box2{
      border-color: white;
@@ -78,6 +78,23 @@
  .dark-mode #box{
     border-color: white;
 }
+.dark-mode #box2 p{
+  color: white;
+}
+.dark-mode #box p{
+ color: white;
+}
+.dark-mode header{
+  border-color: white;
+  color: black;
+  background-color: white;
+}
+.dark-mode footer{
+  border-color: white;
+  color: black;
+  background-color: black;
+}
+
  .normal-mode{
 	background-color: #EAEBFF;
    	color: black;

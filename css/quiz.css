@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  background-color: #FCF8E8;
+}
 
 
 h3 {
@@ -16,6 +18,10 @@ h3 {
 .mainHeader {
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+}
+button{
+  background-color: #DF7862;
+
 }
 
 .quizArea {
@@ -106,7 +112,7 @@ margin-left: 250px;
 }
 
 #showScoresButton {
-  margin-top: 0.3rem;
+  background-color: #DF7862;
 }
 
 

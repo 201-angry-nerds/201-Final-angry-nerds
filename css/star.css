@@ -1,167 +1,174 @@
 #box {
 
-    border: 5px solid black;
-    height: 300px;
-    width: 900px;
-    margin-left: 150px ;
-    margin-top: 50px;
+  border: 5px solid black;
+  height: 300px;
+  width: 900px;
+  margin-left: 150px ;
+  margin-top: 50px;
 
 } 
 
 #imageBlog{
-    float:left;
-    padding: 20px;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
+  float:left;
+  padding: 20px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 h2{
-    padding-top: 30px;
+  padding-top: 30px;
 }
 #box2 {
 
-    border: 5px solid black;
-    margin-top: 50px;
-    height: 300px;
-    width: 900px;
-    margin-left: 150px ;
+  border: 5px solid black;
+  margin-top: 50px;
+  height: 300px;
+  width: 900px;
+  margin-left: 150px ;
 
 } 
 #box3 {
-    width: 50%;
-    margin: 100px;
-    margin-left: 350px;
+  width: 50%;
+  margin: 100px;
+  margin-left: 350px;
 }
 
 
 
 #name3 {
-    width: 262px;
+  width: 262px;
 }
 #navButton{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* #name{
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 } */
 .pointer {cursor: pointer;}
 
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-   /* background-color:aqua;*/
-    background-color: skyblue;
-    opacity: 0.9;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ /* background-color:aqua;*/
+  background-color: #952;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 
 
 
 
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
- 
-  .container2{
-    position: relative;
-    width: 700px;
-    color:white;
-    background: #111;
-    padding: 20px 30px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container2 .post{
-    display: none;
-  }
-  .container2 .text{
-    font-size: 25px;
-    color: #666;
-    font-weight: 500;
-  }
-  .container2 .edit{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 16px;
-    color: #666;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .container2 .edit:hover{
-    text-decoration: underline;
-  }
-  .container2 .star-widget input{
-    display: none;
-  
-  }
-  .star-widget label{  
-    font-size: 40px;
-    color: #444;
-    padding: 10px;
-    transition: all 0.2s ease;
-  }
-  input:not(:checked) ~ label:hover,
-  input:not(:checked) ~ label:hover ~ label{
-    color: #fd4;
-  }
-  input:checked ~ label{
-    color: #fd4;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  }
-  input#rate-5:checked ~ label{
-    color: #fe7;
-    text-shadow: 0 0 20px #952;
-  }
-  #rate-1:checked ~  section2:before{
-    content: "I just hate it 😠" ;
-  }
-  #rate-2:checked ~  section2:before{
-    content: "I don't like it 😒";
-  }
-  #rate-3:checked ~  section2:before{
-    content: "It is awesome 🤗";
-  }
-  #rate-4:checked ~  section2:before{
-    content: "I just like it 👍";
-  }
-  #rate-5:checked ~ section2:before{
-    content: "I just love it 😍";
-    color: #eee;
-  }
-  section2{
-    width: 100%;
-    font-size: 25px;
-    color: #fe7;
-    font-weight: 500;
-    text-align: center;
-    transition: all 0.2s ease;
-  }
-  
-  .textarea textarea:focus{
-    border-color: #444;
-  }
+.container2{
+  position: relative;
+  width: 700px;
+  color:white;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container2 .post{
+  display: none;
+}
+.container2 .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container2 .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container2 .edit:hover{
+  text-decoration: underline;
+}
+.container2 .star-widget input{
+  display: none;
+
+}
+.star-widget label{  
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+#star-widget
+{
+font-size: 20px;
+color: gold;
+padding: 10px;
+
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~  section2:before{
+  content: "I just hate it 😠" ;
+}
+#rate-2:checked ~  section2:before{
+  content: "I don't like it 😒";
+}
+#rate-3:checked ~  section2:before{
+  content: "It is awesome 🤗";
+}
+#rate-4:checked ~  section2:before{
+  content: "I just like it 👍";
+}
+#rate-5:checked ~ section2:before{
+  content: "I just love it 😍";
+  color: #eee;
+}
+section2{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.textarea textarea:focus{
+  border-color: #444;
+}
