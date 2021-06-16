@@ -14,9 +14,30 @@
     <link rel="stylesheet" href="css/flipcard.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/loader.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
    </head>
+   <div class="txt">Loading...</div>
 
+   <!-- loader -->
+   <div class="loader" id="loader">
+   
+     <div class="ap">
+       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 24 24" fill="currentColor" color="#DF7862">
+         <path
+               d="M22 16v-2l-8.5-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V9L2 14v2l8.5-2.5V19L8 20.5V22l4-1 4 1v-1.5L13.5 19v-5.5L22 16z" />
+         <!-- <path d="M0 0h24v24H0V0z" fill="none" /> -->
+       </svg>
+     </div>
+   
+     <div class="tr"></div>
+     <div class="bx"></div>
+   
+   </div>
+   
+   <div class="container6" id="container">
+     <div class="container-inner" id="c-inner">
+     
 <body>
    <header>
       <nav class="navigation">
@@ -215,16 +236,16 @@ and it starts from the moment that you contact us to the moment that you are bac
     <section id="recommendations">
       
 
-      <form id="vacation">
+      <form id="vacation" >
         <fieldset>
         <legend><img style="width: 50px; height: 50px;"src="../images/plane.png" alt=""></legend>
 
         <label for="tripdate">Plan your trip</label>
-        <input type="date" id="tripdate" name="tripdate">
+        <input type="date" id="tripdate" name="tripdate" required>
         
         <br>
         <label for="Prefered">What you are looking for</label>
-        <select name="Tourism Type" id="Tourism Type">
+        <select name="Tourism Type" id="Tourism Type" required>
             <option value="history">Histoy</option>
             <option value="Shores & beaches">Beaches</option>
             <option value="food">Food</option>
@@ -323,6 +344,10 @@ and it starts from the moment that you contact us to the moment that you are bac
    
   <script src="../js/darkMode.js"></script>
   <script src="./js/home.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 
+  <script src="./js/loader.js"></script>
+  </div>
+</div>
 </body>
 </html>

@@ -10,93 +10,123 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/toggle.css">
     <link rel="stylesheet" href="/css/fav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 
 </head>
-<body>
+<body style="    background-color: #FCF8E8;">
+    
+<main style="margin-top: 0px;">
     <header>
-        <nav>
-            <ul>
-                <img src="https://via.placeholder.com/80x80/333" alt="">
-                <li><label  class="switch">
-                    <input id="nightmode"type="checkbox">
-                    <span class="slider round"></span>
-                        </label></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="cities.html">Cities</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="fav.html">Favourite</a></li>
-                <li><a href="quiz.html">test</a></li>
-               
-            </ul>
-         
+        <nav class="navigation">
+          <img src="../images/logo2.png" class="navbar-logo">
+          <div class="navbar-right">
+            
+              <a href="../index.html">Home</a>
+              <a href="../pages/cities.html">Cities</a>
+              <a href="../pages/blog.html">Blog</a>
+              <a href="../pages/fav.html">Favourite</a>
+              <a href="../pages/quiz.html">test</a>
+                  <label  class="switch">
+                      <input id="nightmode"type="checkbox">
+                      <span class="slider round"></span>
+                          </label>
+              
+          </div>
         </nav>
-       
+    
+     
+  
+  
     </header>
-    <main>
+
     <section>
-        <br>
-        <br>
-        <br>
-        <h1>
+      
+        <h1 style="color: #851800;">
             Favourite cities
         </h1>
-        <br>
-        <br>
-        <div id="favImage" >
-            <!-- <a href="./blog.html" id="button"></a> -->
-        </div>
+       
+        <section id="favs">
+            
+           
+        </section>
+      
+        <center>
+            <h1 style="color: #851800;">Range for most loved cites<img id="loved"style="width: 50px; height: 50px;"src="../images/book.png"></h1>
+            <canvas style="padding: 0px; height: 50px;"id="charts"></canvas>
+        </center>
     </section>
+   
+    
+       
+  
     
     
-        <section id="favs"></section>
-    
-
-    
-
-    <br>
-    <br>
-    <br>
-    <center>
-        <canvas id="charts"></canvas>
-    </center>
-    
-    
-
-    <footer><div style="float: right;">
-        <select name="lang" id="lang">
-            <option value="English">English</option>
-            <option value="Arabic">Arabic</option>
-        </select>
-    </div>
-    <a href="">link1</a>
-    <br>
-    <a href="">link2</a>
-    <br>
-    <a href="">link3</a>
-    <br>
-    <a href="">link4</a>
-    
-    <div id="logoFoot">
-        <div id="logo">                    <img src="https://via.placeholder.com/80x80/333" alt="">
-        </div>
-        <div id="sub">
-            <input type="text" name="" id="">
-            <input type="submit">
-        </div>
-
-            <div id="logos">
-
-                <a href="">logo1</a>
-                <a href="">logo2</a>
-                <a href="">logo3</a>
-                <a href="">logo4</a>
-                <h4 style="float: right;">all rights reserved &copy; by angry-nerds ltd</h4>
-
-            </div>
-
-    </div>
 </main>
- </footer>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(114,137,218,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(244, 232, 205,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(114,137,218,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(244, 232, 205,0.1)" />
+    </g>
+</svg>
+<div id="logo2">
+<img style="width:100px;height:100px;" src="../images/logo2.png" alt="">
+
+</div>
+
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+
+<div class="container">
+<div id="logo"> 
+</div>
+
+<a href="">About us</a>
+<br>
+<a href="">privacy Ploicy</a>
+<br>
+<a href="">terms of use</a>
+<br>
+<a href="">feedback</a>
+
+<div id="logoFoot">
+  
+    <div id="sub">
+        <input type="text" placeholder="enter your email address">
+        <br>
+        <input style="height: 25px; border-radius: 10px;"type="submit" value="subscribe">
+    </div>
+
+</div>
+
+</footer>
+<center>
+
+<div id="logos">
+
+    <a href=""><i class="icon-linkedin icon-2x"></i></a>
+    <a href=""><i class="icon-twitter icon-2x"></i></a>
+    <a href=""><i class="icon-youtube icon-2x"></i></a>
+    <a href=""><i class="icon-facebook icon-2x"></i></a>
+
+</div>
+<div >
+    <select name="lang" id="lang">
+        <option value="English">English</option>
+        <option value="Arabic">Arabic</option>
+    </select>
+</center>
+
+<h4 style="text-align: center;">all rights reserved &copy; by angry-nerds ltd</h4>
+
+</div>
  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
  <script src="/js/fav.js"></script>
  <script src="../js/darkMode.js"></script>

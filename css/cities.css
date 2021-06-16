@@ -1,5 +1,4 @@
 body {
-    box-sizing: border-box;
     background-color: #FCF8E8;
 }
 
@@ -11,41 +10,33 @@ h1 {
 }
 
 
-.imageColumn{
-    display: inline-block;
-    padding: 100px;
-}
 
-#column2{
-    display: inline-block;
-    padding: 100px;
 
-}
+
 
 h6 {
     color:black;
     text-align: center;
-    padding-left: 125px;
     font-size: larger;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 button {
-    background-color: #df7861;
-    border: none;
-    border-radius: 3em;
-    color: white;
-    padding: 5px 2px;
-    text-align: center;
-    text-decoration: none;
-    font-family:'Roboto',sans-serif;
-    display: inline-block;
-    font-size: 15px;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-left: 122px;
+    color: #df7861; 
+    background: none; 
+    border:none;
     
   }
+  button:focus {     
+    color:red;   
+    
 
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #allimgs {
    display: flex;
@@ -56,18 +47,19 @@ button {
 
 #allimgs > div {
     /* background-color: #f1f1f1; */
-    width: 100px;
-    margin: 100px;
-    text-align: center;
+    width: 300px;
+    margin: 10px;
     line-height: 75px;
     font-size: 20px;
+    margin-left: 80px;
+
 }
 
 
 #allimgs img {
 
-    width: 280px;
-    display: table;
+    width: 300px;
+    height: 300px;
 }
  p {
      font-size: 10px;
@@ -86,6 +78,9 @@ button {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    box-shadow: 5px 10px #CB705B;
+
+
 }
 
 #middle {
@@ -109,6 +104,7 @@ button {
 }
 
 #myParaghraph {
+    padding-top: 5px;
     line-height: 20px;
     top: 0px;
     left: 0px;
@@ -117,6 +113,8 @@ button {
      background-color: #df7861;
     color: white;
     font-size: 17px;
-    padding: 95px 95px;
     block-size: 20px;
+    width: 300px;
+    height: 300px;
+    color:#FCF8E8;
 } 
