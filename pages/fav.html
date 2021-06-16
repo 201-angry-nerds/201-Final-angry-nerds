@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/toggle.css">
+    <link rel="stylesheet" href="/css/fav.css">
 
 </head>
 <body>
@@ -15,27 +17,49 @@
         <nav>
             <ul>
                 <img src="https://via.placeholder.com/80x80/333" alt="">
-
-                <li><a href="">page1</a></li>
-                <li><a href="">page2</a></li>
-                <li><a href="">page3</a></li>
-                <li><a href="">page4</a></li>
+                <li><label  class="switch">
+                    <input id="nightmode"type="checkbox">
+                    <span class="slider round"></span>
+                        </label></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cities.html">Cities</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="fav.html">Favourite</a></li>
+                <li><a href="quiz.html">test</a></li>
+               
             </ul>
+         
         </nav>
-
-
+       
     </header>
+    <main>
     <section>
+        <br>
+        <br>
+        <br>
         <h1>
-            Fav cities
+            Favourite cities
         </h1>
+        <br>
+        <br>
         <div id="favImage" >
+            <!-- <a href="./blog.html" id="button"></a> -->
         </div>
     </section>
     
+    
+        <section id="favs"></section>
+    
 
-    <section id="favs"></section>
-    <canvas id="charts"></canvas>
+    
+
+    <br>
+    <br>
+    <br>
+    <center>
+        <canvas id="charts"></canvas>
+    </center>
+    
     
 
     <footer><div style="float: right;">
@@ -71,8 +95,10 @@
             </div>
 
     </div>
+</main>
  </footer>
  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
  <script src="/js/fav.js"></script>
+ <script src="../js/darkMode.js"></script>
 </body>
 </html>
