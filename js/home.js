@@ -37,21 +37,15 @@ let seasonArr = [];
 for( let i= 0; i<Recomendcity.recCity.length;i+=4){
   //seasonArr[i] =Recomendcity.recCity.slice(i, i+4);
   seasonArr.push(Recomendcity.recCity.slice(i, i+4)) ;
-
-
   console.log(seasonArr);
 }
-
-
 /* <div class="slideshow-container">
-
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="img_nature_wide.jpg" style="width:100%">
   <div class="text">Caption Text</div>
 </div> */
 //let mySlideDiv=document.getElementById('mySlides');
-
 /*
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -63,7 +57,6 @@ function recomend(e){
   let dateVal= e.target.tripdate.value;
   let compDate = parseInt(dateVal.split('-')[1]);
   console.log(compDate);
-
   // for (let x= 0; x<seasonArr.length; x++){
   if(compDate<=summer && compDate>=sprgTime){//spring
     for(let i=0; i<seasonArr.length;i++){
@@ -73,16 +66,12 @@ function recomend(e){
       let h4 = document.createElement('h4');
       //season.appendChild(img);
      //season.appendChild(h4);
-
       img.setAttribute('src', seasonArr[0][i].src);
       h4.textContent = seasonArr[0][i].name;
       //caption.appendChild(h4);
-
       mySlideDiv.appendChild(img);
       mySlideDiv.appendChild(caption);
-
       season.appendChild(mySlideDiv);
-
       //console.log(img);
     }
     currentSlide(0);
@@ -98,11 +87,9 @@ function recomend(e){
       h4.textContent = seasonArr[1][i].name;
       season.appendChild(mySlideDiv);
       mySlideDiv.appendChild(img);
-
       //console.log(img);
     }
     currentSlide(0);
-
   }else if(compDate<=winter && compDate>fall){//fall
     for(let i=0; i<seasonArr.length;i++){
       let mySlideDiv=document.createElement('div');
@@ -111,16 +98,13 @@ function recomend(e){
       let h4 = document.createElement('h4');
       //season.appendChild(img);
      //season.appendChild(h4);
-     
       img.setAttribute('src', seasonArr[2][i].src);
       h4.textContent = seasonArr[2][i].name;
       season.appendChild(mySlideDiv);
       mySlideDiv.appendChild(img);
-
       //console.log(img);
     }
     currentSlide(0);
-
   }else{
     for(let i=0; i<seasonArr.length;i++){
       let mySlideDiv=document.createElement('div');
@@ -133,15 +117,12 @@ function recomend(e){
       h4.textContent = seasonArr[3][i].name;
       season.appendChild(mySlideDiv);
       mySlideDiv.appendChild(img);
-
       //console.log(img);
     }
     currentSlide(0);
-
   }
 }
 form.addEventListener('submit', recomend);
-
 //}
 // Date.prototype.getUTCDate = function(){
 //   if(crrnt <summer && crrnt>sprgTime){
@@ -156,9 +137,6 @@ form.addEventListener('submit', recomend);
 //   }
 // };
 // this.getUTCDate();
-
-
-
 function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "block") {
@@ -170,16 +148,12 @@ function myFunction() {
 //navB.addEventListener('click',myFunction);
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -195,3 +169,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
