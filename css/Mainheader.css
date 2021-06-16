@@ -1,19 +1,76 @@
-body{
-    padding-right: 40px;
-    padding-left: 40px;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-nav ul li{
-    display: inline-block;
- 
-   padding-left: 20px;
-   /* margin-right: 60px;*/
-   float: right;
-   padding-right: 80px;
-   padding-top: 20px;
+main{
+    margin-top: 700px;
+    
+}
+.navigation{
+    position:absolute;
+    top:0;
+    position: relative;
 
+    width:100%;
+    z-index:2;
+
+     background-color:rgba(0,0,0,0.5);;
+
+  }
+  
+  .navbar-right{
+    float:right;
+    padding-right:10%;
+    margin-top: 45px;
+  }
+  
+
+  .navbar-right a{
+    text-decoration:none;
+    padding:10px;
+    color: #fff;
+    font-family:Arial;
+    font-weight:1000;
+  }
+  
+  .navbar-right a:hover{
+    text-decoration:black;
+
+  }
+  .navbar-logo{
+    
+   width: 170px;
+   height: 150px;
+   padding-left: 20px;
+   padding-bottom: 1px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    line-height: 100px;
+
+    font-family:'Times New Roman', Times, serif;
 }
-nav{
-    height: 600px;
-    padding: 20px;
-    background-image: url('https://via.placeholder.com/1500x600/ddd');
-}
+  .video-container {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+
+  }
+  
+  #video-bg{
+    width:100%;
+  }
+  
+
