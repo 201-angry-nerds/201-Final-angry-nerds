@@ -41,7 +41,7 @@ let city8 = new Cities ('Tahiti', '../images/186929.jpg'
 , 'The Islands of Tahiti certified "Safe Travels" Located in the Pacific Ocean, The Islands of Tahiti are a mythical destination. The mention of Tahiti calls to mind visions of an idyllic island paradise and once you visit, youll discover that your imagination isnt too off the mark.');
 // Cities.prototype.render = function (){
 
-
+ 
 function render(){
   for (let i =0; i<allCities.length ; i++) {
     imgplace = document.createElement('img');
@@ -51,6 +51,7 @@ function render(){
     let imgdiv = document.createElement('div');
     let btn = document.createElement('button');
     
+    
     paragragh.setAttribute('id','myParaghraph');
     imgplace.setAttribute('id','myImg');
     hoveredDiv.setAttribute('id','middle');
@@ -59,7 +60,8 @@ function render(){
   
   img8.appendChild(imgdiv);
   btn.setAttribute('id',i);
-  btn.textContent = ('Favorite');
+  btn.setAttribute('class','icon-heart icon-2x');
+  //btn.textContent = ('Favorite');
   
   
   imgdiv.appendChild(imgplace);

@@ -67,7 +67,7 @@ h2{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-  .container{
+  .container2{
     position: relative;
     width: 700px;
     color:white;
@@ -79,15 +79,15 @@ h2{
     justify-content: center;
     flex-direction: column;
   }
-  .container .post{
+  .container2 .post{
     display: none;
   }
-  .container .text{
+  .container2 .text{
     font-size: 25px;
     color: #666;
     font-weight: 500;
   }
-  .container .edit{
+  .container2 .edit{
     position: absolute;
     right: 10px;
     top: 5px;
@@ -96,10 +96,10 @@ h2{
     font-weight: 500;
     cursor: pointer;
   }
-  .container .edit:hover{
+  .container2 .edit:hover{
     text-decoration: underline;
   }
-  .container .star-widget input{
+  .container2 .star-widget input{
     display: none;
   }
 
