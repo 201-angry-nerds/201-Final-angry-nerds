@@ -9,8 +9,8 @@
     float:left;
     padding: 20px;
     border-radius: 100px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 h2{
     padding-top: 30px;
@@ -27,9 +27,7 @@ h2{
     margin: 100px;
     margin-left: 350px;
 }
-.l1{
-    margin-left: 30%;
-}
+
 #name3 {
     width: 262px;
 }

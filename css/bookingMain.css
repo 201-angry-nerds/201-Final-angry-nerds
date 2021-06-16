@@ -3,15 +3,24 @@ form{
     margin: 0 auto ;
     padding-top:120px ;
     padding-bottom:120px ;
-
-
-
+    color: white;
+    font-size: 20px;
+    font:bold;
+}
+body{
+  background-color: #fcf8e8;
 }
 #cap{
     text-align: center;
 }
 fieldset{
-    border: black solid 3px;
+    border:#df7861 solid 4px;
+    border-radius: 35px;
+    background: url(https://i.pinimg.com/750x/9d/da/99/9dda99ebd4a6ba9659d965954181fedc.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+   opacity: 0.8;
+    
 }
 
 div.elem-group {
@@ -28,13 +37,17 @@ div.elem-group {
   label {
     display: block;
     padding-bottom: 10px;
+
   }
   
   input, select, textarea
   {
-   
     width: 90%;
     padding: 10px;
+    border-radius: 10px ;
+    border-color:#df7861 ;
+    box-shadow:0 3px 3px #df7861;
+
   }
   
   div.elem-group.inlined input{
@@ -45,8 +58,11 @@ div.elem-group {
   textarea {
     height: 250px;
   }
-  
+
  
-  
- 
-  
+  button{
+    border-radius: 5px;
+    background-color: #df7861;
+    padding: 10px;
+    color:white;
+  }
