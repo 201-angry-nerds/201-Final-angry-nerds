@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title style="text-align: center;">Test Your Travel Knowledge</title>
+    <link rel="stylesheet" href="../css/quiz.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/toggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+  </head>
+
+    <header>
+        <nav class="navigation">
+          <img src="../images/logo2.png" class="navbar-logo">
+          <div class="navbar-right">
+            
+              <a href="../index.html">Home</a>
+              <a href="../pages/cities.html">Cities</a>
+              <a href="../pages/blog.html">Blog</a>
+              <a href="../pages/fav.html">Favourite</a>
+              <a href="../pages/quiz.html">test</a>
+                  <label  class="switch">
+                      <input id="nightmode"type="checkbox">
+                      <span class="slider round"></span>
+                          </label>
+              
+          </div>
+        </nav>
+    
+     
+  
+  
+    </header>
+    <body style="    background-color: #FCF8E8;">
+ 
+    <main class="quizArea" style="margin-top: 0px;">
+      <div class="mainHeader" style="text-align: center;">
+        <h1 id="header1"style="text-align: center;">Test Your Travel Knowledge</h1>
+        <span  id="timerArea"></span>
+      </div>
+      <section id="questionsContainer" class="hide" style="text-align: center;">
+        <div id="question"></div>
+        <div id="answers" class="buttonArea"></div>
+      </section>
+      <section class="scores">
+        <div id="scoreArea" class="hide"></div>
+      </section>
+	  <section>
+	  <div class="image1" id="image01" style="text-align: center;">
+	  </div>
+	  </section>
+      <section class="controls">
+        <button class="start" id="startButton">START</button>
+        <button class="btn" id="showScoresButton">See High Scores</button>
+        <br />
+        <div id="scoreArea" class="hide">
+          <span id="scoreDisplay"></span>
+          <input type="text" name="initials" id="initials" />
+          <button id="submitScore" class="submit">Submit Score</button>
+        </div>
+      </section>
+    </main>
+    <script src="../js/quiz.js"></script>
+    <section  style="padding-top: 50px;">
+    </center>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(114,137,218,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(244, 232, 205,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(114,137,218,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(244, 232, 205,0.1)" />
+        </g>
+    </svg>
+    <div id="logo2">
+    <img style="width:100px;height:100px;" src="../images/logo2.png" alt="">
+    
+    </div>
+    
+    <footer class="page-footer font-small unique-color-dark pt-4">
+    
+    
+    <div class="container">
+    <div id="logo"> 
+    </div>
+    
+    <a href="">About us</a>
+    <br>
+    <a href="">privacy Ploicy</a>
+    <br>
+    <a href="">terms of use</a>
+    <br>
+    <a href="">feedback</a>
+    
+    <div id="logoFoot">
+      
+        <div id="sub">
+            <input type="text" placeholder="enter your email address">
+            <br>
+            <input style="height: 25px; border-radius: 10px;"type="submit" value="subscribe">
+        </div>
+    
+    </div>
+    
+    </footer>
+    <center>
+    
+    <div id="logos">
+    
+        <a href=""><i class="icon-linkedin icon-2x"></i></a>
+        <a href=""><i class="icon-twitter icon-2x"></i></a>
+        <a href=""><i class="icon-youtube icon-2x"></i></a>
+        <a href=""><i class="icon-facebook icon-2x"></i></a>
+    
+    </div>
+    <div >
+        <select name="lang" id="lang">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+        </select>
+    </center>
+    
+    <h4 style="text-align: center;">all rights reserved &copy; by angry-nerds ltd</h4>
+    
+    </div>
+    </section>
+  <script src="../js/darkMode.js"></script>
+  </body>
+</html>

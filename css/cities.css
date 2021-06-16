@@ -1,11 +1,120 @@
-
-.imageColumn{
-    display: inline-block;
-    padding: 100px;
+body {
+    background-color: #FCF8E8;
 }
 
-#column2{
-    display: inline-block;
-    padding: 100px;
+h1 {
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
+
+
+
+
+
+h6 {
+    color:black;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+button {
+    color: #df7861; 
+    background: none; 
+    border:none;
+    
+  }
+  button:focus {     
+    color:red;   
+    
+
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#allimgs {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -65px;
+   
+}
+
+#allimgs > div {
+    /* background-color: #f1f1f1; */
+    width: 300px;
+    margin: 10px;
+    line-height: 75px;
+    font-size: 20px;
+    margin-left: 80px;
 
 }
+
+
+#allimgs img {
+
+    width: 300px;
+    height: 300px;
+}
+ p {
+     font-size: 10px;
+ }
+
+ #container{
+    position: relative;
+    width: 100%;
+}
+
+
+#myImg {
+    opacity: 1;
+     display: block; 
+     width: 5px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px #CB705B;
+
+
+}
+
+#middle {
+    line-height: 5px;
+    transition: .8s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+     text-align: center;
+}
+
+#container:hover #myImg {
+  opacity: 0.3;
+}
+
+#container:hover #middle {
+  opacity: 1;
+}
+
+#myParaghraph {
+    padding-top: 5px;
+    line-height: 20px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center; 
+     background-color: #df7861;
+    color: white;
+    font-size: 17px;
+    block-size: 20px;
+    width: 300px;
+    height: 300px;
+    color:#FCF8E8;
+} 

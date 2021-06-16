@@ -1,3 +1,9 @@
+body{
+    background-color: #FCF8E8;
+    line-height: 30px;
+
+    font-family: 'Baloo Tammudu 2', cursive;
+}
 p {
     text-align: justify;
     padding: 20px;
@@ -235,5 +241,147 @@ p {
         border: red;
         border-width: 10px;
     }
+
+p {
+text-align: justify;
+padding: 20px;
+color: black;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 20px;
+letter-spacing: 1px;
+}
+fieldset{
+    width: 70%;
+}
+#box {
+    border: 5px ;
+    height: 300px;
+    width: 900px;
+    margin-left: 150px ;
+    margin-top: 50px;
+    border-color: black;
+} 
+#imageBlog{
+    float:left;
+    padding: 20px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+h2{
+    padding-top: 30px;
+    color: #DF7861;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#submitForm{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+#box2 {
+    border: 5px;
+    margin-top: 50px;
+    height: 300px;
+    width: 900px;
+    margin-left: 150px ;
+    border-color: black;
+} 
+button{
+    margin-left: 500px;
+    margin-top: 80px;
+} 
+#box3 {
+    width: 50%;
+    margin: 100px;
+    margin-left: 350px;
+}
+.l1{
+    margin-left: 30%;
+    color: #DF7861;
+}
+#navButton{
+  position: relative;
+  left: 500px;
+background-color: #DF7861;
+    border: none;
+    border-radius: 3em;
+    color: white;
+    /* padding: 5px 2px; */
+    text-align: center;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#name{
+    width: 180px;
+    height: 40px;
+}
+.pointer {cursor: pointer;}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   /* background-color:aqua; */
+    background-color: skyblue;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  #navButton {
+color: black;
+border-color: #DF7861;
+border-style: solid;
+border-width: 3px;
+font-size: x-large;
+  }
+.container2 {
+display: table;
+/* background-color: #D4E2D4; */
+border-width: 5px; 
+background-image: url(https://images.squarespace-cdn.com/content/v1/5bb1b6cdf4755a7725f60a37/1583218650051-A3WV25IV3WPDWWW6PY7I/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/Hilton_Northolme_Seychelles-25.jpg?format=1500w);
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  .overlay-content{
+background-color: #FCF8E8;
+  }
+  #btn{
+      font-size: 30px;
+      color: #DF7861;
+      border-width: 3px ;
+      padding: 5px;
+margin: 100px;
+  }
+#name{
+    border-width: 3px;
+}
+#name2{
+    border-width: 3px;
+    height: 40px;
+}
+#name3 {
+    border-width: 3px;
+}
+.post{
+    border-width: 5px;
+}
+.star-widget .l1 {
+    color: #DF7861;
+    border: red;
+    border-width: 10px;
+}
 
 
